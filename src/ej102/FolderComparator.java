@@ -1,7 +1,5 @@
 package ej102;
 
-import org.junit.jupiter.api.function.Executable;
-
 import java.io.File;
 import java.util.*;
 

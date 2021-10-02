@@ -19,12 +19,13 @@ public class Ej9JSD {
         };
         String ruta = "./BinaryFile.dat";
         try {
-            DataOutputStream dos = new DataOutputStream(new FileOutputStream(ruta));
-            for (int i = 0; i <titols.length ; i++) {
-                dos.writeUTF(titols[i]);
-                dos.writeInt(anyoPublicacion[i]);
-            }
-            dos.close();
+                DataOutputStream dos = new DataOutputStream(new FileOutputStream(ruta));
+                for (int i = 0; i < titols.length; i++) {
+                    dos.writeUTF(titols[i]);
+                    dos.writeInt(anyoPublicacion[i]);
+                }
+                dos.close();
+
         }catch (Exception e){
 
         }
