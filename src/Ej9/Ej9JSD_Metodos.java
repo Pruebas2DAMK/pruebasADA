@@ -31,8 +31,9 @@ public class Ej9JSD_Metodos {
         String salida="";
         DataInputStream dis = new DataInputStream(new FileInputStream(path));
         for (int i = 0; i < cantidadTitulos; i++) {
-            System.out.println(dis.readUTF());
-            System.out.println(dis.readInt());
+            salida+=dis.readUTF()+" - ";
+            salida+=dis.readInt();
+            salida+="\n";
         }
         dis.close();
         return salida;
@@ -50,7 +51,7 @@ public class Ej9JSD_Metodos {
         }
 
         try {
-           leeDis(ruta,4);
+            System.out.println(leeDis(ruta, 4));
         }catch (Exception e){
 
         }
